@@ -1,0 +1,55 @@
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 1000; 
+    
+
+    background: linear-gradient(-45deg, #E11A22, #141414, #00338D);
+    background-size: 300% 300%;
+    animation: coresFluindo 12s ease infinite;
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes coresFluindo {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
+.navbar-logo, .menu-button {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.menu-button {
+  background-color: transparent;
+  font-size: 25px;
+  border: none;
+  transition: 0.3s;
+}
+
+.menu-button:hover{
+  transform: scale(1.02);
+  cursor: pointer;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: #444444;
+}

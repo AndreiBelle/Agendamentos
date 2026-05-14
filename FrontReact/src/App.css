@@ -1,0 +1,117 @@
+.tabela {
+    width: 100%;
+    border-spacing: 0;
+    background-color: #252525;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #333;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+th {
+    background-color: #1f1f1f;
+    color: #888; 
+    font-size: 18px;
+    text-align: left;
+    padding: 16px;
+    border-bottom: 2px solid #333;
+}
+
+td {
+    padding: 16px;
+    border-bottom: 1px solid #333;
+    color: #ccc;
+}
+
+
+tr:hover td {
+    background-color: #2d2d2d;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container td:first-child {
+    color: #E11A22; 
+    font-weight: 600;
+}
+
+h2 {
+    margin-top: 15px;
+}
+
+.btn-fechar {
+    text-align: center;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-fechar:hover {
+    cursor: pointer;
+    background-color: #E11A22;
+
+}
+
+
+.teste {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+    background-color: rgba(0, 0, 0, 0);
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); 
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+
+    display: flex;           
+    justify-content: center; 
+    align-items: center; 
+    
+    z-index: 999;
+}
+
+.modal-overlay { 
+    width: 250px;
+    margin: 25px;
+    background-color: rgb(27, 27, 27);
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.modal-overlay h3 {
+    text-align: center;
+    margin: 5px;
+}
+
+.modal-overlay button {
+    width: 215px;
+    margin: 2px;
+    margin-top: 10px;
+    border-radius: 12px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.modal-overlay .btn-confirmar:hover{
+    background-color: #0044bb;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 51, 141, 0.3);
+}
+
+.modal-overlay .btn-cancel:hover {
+    background-color: rgba(255, 77, 77, 0.1);
+    border-color: #E11A22; 
+    color: #E11A22;
+}
+
+
+
